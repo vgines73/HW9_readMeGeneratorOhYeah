@@ -58,9 +58,9 @@ function init() {
     const inquirer = require("inquirer")
     const fs = require("fs")
     
-    inquirer.prompt(questions).then((res) => {
-        console.log(res);
-        fs.writeFile("readme.md", data, (err) => {
+    inquirer.prompt(questions).then((data) => {
+        console.log(data);
+        fs.writeFile("readme.md", "data", (err) => {
             if (err) throw err;
             console.log("complete")
         }) 
