@@ -1,23 +1,22 @@
 // function to generate markdown for README
 function generateMarkdown(data) {
-  return `# ${data.title}
-  ======
+  return `# **${data.title}**
 ## Description:
   ${data.description}
 
 ## Table of Contents:
 
-  * Installation 
+  * [Installation] 
 
-  * Usage 
+  * [Usage] 
 
-  * License 
+  * [License] 
 
-  * Contributing 
+  * [Contributing] 
 
-  * Tests
+  * [Tests]
 
-  * Questions
+  * [Questions]
 
 
 ## Installation:
@@ -38,6 +37,7 @@ function generateMarkdown(data) {
   ---
 ## Questions:
   Link to my GitHub profile <a href="https://github.com/${data.gitHub}">${data.gitHub}</a>
+  
   You can reach me by email at: ${data.email}
 `;
 }
