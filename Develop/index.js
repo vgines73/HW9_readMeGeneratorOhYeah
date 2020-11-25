@@ -1,3 +1,5 @@
+const generateMarkdown = require("./utils/generateMarkdown");
+
 // array of questions for user
 const questions = [
     {
@@ -60,7 +62,7 @@ function init() {
     
     inquirer.prompt(questions).then((data) => {
         console.log(data);
-        fs.writeFile("readme.md", "data", (err) => {
+        fs.writeFile("readme.md", generateMarkdown(data), (err) => {
             if (err) throw err;
             console.log("complete")
         }) 
