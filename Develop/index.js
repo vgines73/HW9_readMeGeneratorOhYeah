@@ -50,12 +50,21 @@ const questions = [
 ];
 
 // function to write README file
-function writeToFile(fileName, data) {
-}
+// function writeToFile(fileName, data) {
+// }
 
 // function to initialize program
 function init() {
-
+    const inquirer = require("inquirer")
+    const fs = require("fs")
+    
+    inquirer.prompt(questions).then((res) => {
+        console.log(res);
+        fs.writeFile("readme.md", data, (err) => {
+            if (err) throw err;
+            console.log("complete")
+        }) 
+    })
 }
 
 // function call to initialize program
