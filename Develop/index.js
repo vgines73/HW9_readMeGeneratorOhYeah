@@ -33,7 +33,7 @@ const questions = [
         name: "testInstructions"
     },
     {
-        type: "choices",
+        type: "list",
         message: "Choose a License.",
         choices: ["MIT", "GNU", "GPLv3"],
         name: "license"
