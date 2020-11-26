@@ -1,24 +1,24 @@
 # **Read Me Generator Oh Yeah**
 ## Description:
-  A generator where the user answers a series of prompts using Inquirer to create a readme file.
+  A generator using Inquirer where the user answers a series of prompts to create a readme file.
 
 ## Table of Contents:
 
-  * [Installation] 
+  * [Installation](#Installation)
 
-  * [Usage] 
+  * [Usage](#Usage)
 
-  * [License] 
+  * [License](#License)
 
-  * [Contributing] 
+  * [Contributing](#Contributing) 
 
-  * [Tests]
+  * [Test Instructions](#Test-Instructions)
 
-  * [Questions]
+  * [Questions](#Questions)
 
 
 ## Installation:
-  Must install Inquirer in Node. npm i inquirer.
+  Must install Inquirer in Node. npm i inquirer
 
 ## Usage:
   Javascript, Node, Inquirer.
@@ -27,10 +27,10 @@
   MIT
 
 ## Contributing:
-  Vincent Gines. Ask for a Pull Request if you would like to contribute.
+  Vincent Gines. Ask for a Pull Request from my GitHub Profile link from the Questions section if you would like to contribute.
 
 ## Test Instructions:
-  I don't know what to put here.
+  First, Go to my GitHub Profile and clone my Read Me Generator on your computer. Then open up your terminal and install Inquirer by typing: npm i inquirer . Once installed, type in your terminal: node index.js . This will open up the series of prompts to create your readme file.
 
   ---
 ## Questions:

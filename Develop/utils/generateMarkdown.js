@@ -6,17 +6,17 @@ function generateMarkdown(data) {
 
 ## Table of Contents:
 
-  * [Installation] 
+  * [Installation](#Installation)
 
-  * [Usage] 
+  * [Usage](#Usage)
 
-  * [License] 
+  * [License](#License)
 
-  * [Contributing] 
+  * [Contributing](#Contributing) 
 
-  * [Tests]
+  * [Test Instructions](#Test-Instructions)
 
-  * [Questions]
+  * [Questions](#Questions)
 
 
 ## Installation:
@@ -36,7 +36,7 @@ function generateMarkdown(data) {
 
   ---
 ## Questions:
-  Link to my GitHub profile: <a href="https://github.com/${data.gitHub}">${data.gitHub}</a>
+  Link to my GitHub profile: https://github.com/${data.gitHub}
 
   You can reach me by email at: ${data.email}
 `;
