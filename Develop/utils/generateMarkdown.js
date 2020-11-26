@@ -36,8 +36,8 @@ function generateMarkdown(data) {
 
   ---
 ## Questions:
-  Link to my GitHub profile <a href="https://github.com/${data.gitHub}">${data.gitHub}</a>
-  
+  Link to my GitHub profile: <a href="https://github.com/${data.gitHub}">${data.gitHub}</a>
+
   You can reach me by email at: ${data.email}
 `;
 }
