@@ -1,3 +1,4 @@
+const { log } = require("console");
 const generateMarkdown = require("./utils/generateMarkdown");
 
 // array of questions for user
@@ -35,7 +36,7 @@ const questions = [
     {
         type: "list",
         message: "Choose a License.",
-        choices: ["MIT", "GNU", "GPLv3"],
+        choices: ["MIT", "Apache", "GNU GPLv3"],
         name: "license"
     },
     {
@@ -61,13 +62,33 @@ function init() {
     const fs = require("fs")
     
     inquirer.prompt(questions).then((data) => {
-        console.log(data);
+        //console.log(data);
+        data.licenseImg = userChoice(data.license)
+        //console.log(licenseImg)
         fs.writeFile("readme.md", generateMarkdown(data), (err) => {
+            //console.log(licenseImg);
             if (err) throw err;
             console.log("complete")
         }) 
     })
 }
 
+// Switch Statement to Return License Image
+function userChoice(choice){
+    switch (choice) {
+        case "MIT":
+            return "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"
+        
+        case "Apache":
+            return "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)"
+
+        case "GNU GPLv3":
+            return "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)"
+    
+        default:
+            break;
+    }
+    console.log(choice)
+}
 // function call to initialize program
 init();

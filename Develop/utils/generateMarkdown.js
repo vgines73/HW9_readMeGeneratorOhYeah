@@ -20,19 +20,25 @@ function generateMarkdown(data) {
 
 
 ## Installation:
+
   ${data.installationInstructions}
+
 
 ## Usage:
   ${data.usageInfo}
 
 ## License:
-  ${data.license}
+  ${data.licenseImg}
 
 ## Contributing:
   ${data.contribution}
 
 ## Test Instructions:
   ${data.testInstructions}
+
+## Image
+
+  ![image](https://i.imgur.com/M5sUrfB.png)
 
   ---
 ## Questions:
