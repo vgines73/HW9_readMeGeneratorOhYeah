@@ -16,13 +16,13 @@ function generateMarkdown(data) {
 
   * [Test Instructions](#Test-Instructions)
 
+  * [Screenshots](#Screenshots)
+
   * [Questions](#Questions)
 
 
 ## Installation:
-
   ${data.installationInstructions}
-
 
 ## Usage:
   ${data.usageInfo}
@@ -35,10 +35,6 @@ function generateMarkdown(data) {
 
 ## Test Instructions:
   ${data.testInstructions}
-
-## Image
-
-  ![image](https://i.imgur.com/M5sUrfB.png)
 
   ---
 ## Questions:

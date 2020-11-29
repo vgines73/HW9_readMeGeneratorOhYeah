@@ -49,12 +49,13 @@ const questions = [
         message: "Enter your Email Address.",
         name: "email"
     },
+    // {
+    //     type: "input",
+    //     message: "Enter the link for your screenshot image",
+    //     name: "screenshot"
+    // }
 
 ];
-
-// function to write README file
-// function writeToFile(fileName, data) {
-// }
 
 // function to initialize program
 function init() {
