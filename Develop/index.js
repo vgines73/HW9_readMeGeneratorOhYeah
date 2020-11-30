@@ -49,12 +49,6 @@ const questions = [
         message: "Enter your Email Address.",
         name: "email"
     },
-    // {
-    //     type: "input",
-    //     message: "Enter the link for your screenshot image",
-    //     name: "screenshot"
-    // }
-
 ];
 
 // function to initialize program
@@ -74,7 +68,7 @@ function init() {
     })
 }
 
-// Switch Statement to Return License Image
+// switch statement to return license image
 function userChoice(choice){
     switch (choice) {
         case "MIT":
