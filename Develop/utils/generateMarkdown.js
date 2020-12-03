@@ -16,8 +16,6 @@ function generateMarkdown(data) {
 
   * [Test Instructions](#Test-Instructions)
 
-  * [Screenshots](#Screenshots)
-
   * [Questions](#Questions)
 
 
